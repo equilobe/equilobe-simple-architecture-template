@@ -12,11 +12,13 @@
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
     <PackageReference Include="Ben.Demystifier" Version="0.4.1" />
     <PackageReference Include="BouncyCastle.NetCore" Version="1.8.3" />
+    <PackageReference Include="FluentValidation" Version="11.3.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.3.0" />
     <PackageReference Include="IdentityServer4.AccessTokenValidation" Version="2.7.0" />
 
     <PackageReference Include="jose-jwt" Version="2.4.0" />
-    <PackageReference Include="MediatR" Version="10.0.1" />
-    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
+    <PackageReference Include="MediatR" Version="11.0.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.0.0" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.9" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
@@ -30,6 +32,10 @@
 
   <ItemGroup>
     <Folder Include="Common\Settings\Models\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Equilobe.SimpleArchitecture.Infrastructure\Equilobe.SimpleArchitecture.Infrastructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>

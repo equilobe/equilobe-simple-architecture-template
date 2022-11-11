@@ -5,10 +5,11 @@ using Equilobe.Microservice.Core.Swagger;
 using Equilobe.SimpleArchitecture.Common.Cors.Extensions;
 using Equilobe.Microservice.Core.AspNet.Mvc.Version.Extensions;
 using System.Reflection;
-using MediatR;
 using Equilobe.Microservice.Core.Swagger.Settings;
 using Equilobe.SimpleArchitecture.Common.Settings.Extensions;
 using Equilobe.SimpleArchitecture.Common.Cors;
+using Equilobe.SimpleArchitecture.Infrastructure.Mediator.Extensions;
+using FluentValidation;
 
 var (builder, services, configuration) = WebApplication.CreateBuilder(args);
 
@@ -22,7 +23,8 @@ services.AddCors(configuration);
 services.AddHttpContextAccessor();
 services.AddExceptionHandlers(true);
 services.AddExceptionHandlersFrom(assembly);
-services.AddMediatR(assembly);
+services.AddMediator(assembly);
+services.AddValidatorsFromAssembly(assembly);
 services.AddApplicationSettings(configuration);
 services.AddSwagger((SwaggerSettings x) =>
 {

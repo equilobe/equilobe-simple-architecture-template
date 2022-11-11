@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30804.86
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Equilobe.SimpleArchitecture", "Equilobe.SimpleArchitecture\Equilobe.SimpleArchitecture.csproj", "{17016FD1-2E1E-4DC5-913E-E1384B275926}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Equilobe.SimpleArchitecture", "Equilobe.SimpleArchitecture\Equilobe.SimpleArchitecture.csproj", "{17016FD1-2E1E-4DC5-913E-E1384B275926}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Equilobe.SimpleArchitecture.Infrastructure", "Equilobe.SimpleArchitecture.Infrastructure\Equilobe.SimpleArchitecture.Infrastructure.csproj", "{9942E580-9EC8-4FE4-8812-2639ED0F4EBB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +17,10 @@ Global
 		{17016FD1-2E1E-4DC5-913E-E1384B275926}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17016FD1-2E1E-4DC5-913E-E1384B275926}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17016FD1-2E1E-4DC5-913E-E1384B275926}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9B256614-EE52-4ACD-9024-446093015A01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9B256614-EE52-4ACD-9024-446093015A01}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9B256614-EE52-4ACD-9024-446093015A01}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9B256614-EE52-4ACD-9024-446093015A01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9942E580-9EC8-4FE4-8812-2639ED0F4EBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9942E580-9EC8-4FE4-8812-2639ED0F4EBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9942E580-9EC8-4FE4-8812-2639ED0F4EBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9942E580-9EC8-4FE4-8812-2639ED0F4EBB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
