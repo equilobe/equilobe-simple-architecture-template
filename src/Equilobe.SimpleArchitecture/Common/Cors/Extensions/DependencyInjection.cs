@@ -9,7 +9,7 @@ public static class DependencyInjection
             options.AddPolicy(name: PolicyNames.AllowOrigin,
                 policy =>
                 {
-                    policy.WithOrigins(configuration["ApplicationSettings:CorsAllow"])
+                    policy.WithOrigins(configuration["ApplicationSettings:CorsAllow"] ?? default!)
                         .AllowAnyMethod()
                         .AllowAnyHeader()
                         .AllowCredentials();

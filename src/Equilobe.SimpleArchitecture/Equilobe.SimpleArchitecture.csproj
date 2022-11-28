@@ -1,33 +1,32 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>f02e3bb0-bd0a-4f36-b74f-5f412356a263</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="AspNetCore.HealthChecks.MongoDb" Version="6.0.2" />
-    <PackageReference Include="AutoMapper" Version="11.0.1" />
-    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
-    <PackageReference Include="Ben.Demystifier" Version="0.4.1" />
-    <PackageReference Include="BouncyCastle.NetCore" Version="1.8.3" />
-    <PackageReference Include="FluentValidation" Version="11.3.0" />
-    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.3.0" />
-    <PackageReference Include="IdentityServer4.AccessTokenValidation" Version="2.7.0" />
+    <PackageReference Include="AutoMapper" Version="12.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="FluentValidation" Version="11.4.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.4.0" />
+    <PackageReference Include="IdentityServer4.AccessTokenValidation" Version="3.0.1" />
 
-    <PackageReference Include="jose-jwt" Version="2.4.0" />
-    <PackageReference Include="MediatR" Version="11.0.0" />
+    <PackageReference Include="MediatR" Version="11.1.0" />
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.0.0" />
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.9" />
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
-    <PackageReference Include="NSwag.AspNetCore" Version="13.16.1" />
-    <PackageReference Include="NSwag.Generation.AspNetCore" Version="13.16.1" />
-    <PackageReference Include="Serilog.AspNetCore" Version="3.2.0" />
-    <PackageReference Include="Serilog.Settings.Configuration" Version="3.1.0" />
-    <PackageReference Include="Serilog.Sinks.Console" Version="3.1.1" />
-    <PackageReference Include="Serilog.Sinks.File" Version="4.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="7.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+    <PackageReference Include="Equilobe.Microservice.Core" Version="2.0.2" />
+    <PackageReference Include="Equilobe.Microservice.Core.AspNet.Mvc" Version="1.0.0" />
+    <PackageReference Include="Equilobe.Microservice.Core.ExceptionHandling" Version="1.0.0" />
+    <PackageReference Include="Equilobe.Microservice.Core.Exceptions" Version="1.0.0" />
+    <PackageReference Include="Equilobe.Microservice.Core.EfCore" Version="1.0.0" />
+    <PackageReference Include="Equilobe.Microservice.Core.Swagger" Version="1.0.0" />
+    <PackageReference Include="Equilobe.Microservice.Core.Logging" Version="1.0.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -39,26 +38,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="Equilobe.Microservice.Core">
-      <HintPath>..\..\..\equilobe-shared-dlls\Equilobe.Microservice.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Equilobe.Microservice.Core.AspNet.Mvc">
-      <HintPath>..\..\..\equilobe-shared-dlls\Equilobe.Microservice.Core.AspNet.Mvc.dll</HintPath>
-    </Reference>
-    <Reference Include="Equilobe.Microservice.Core.ExceptionHandling">
-      <HintPath>..\..\..\equilobe-shared-dlls\Equilobe.Microservice.Core.ExceptionHandling.dll</HintPath>
-    </Reference>
-    <Reference Include="Equilobe.Microservice.Core.Exceptions">
-      <HintPath>..\..\..\equilobe-shared-dlls\Equilobe.Microservice.Core.Exceptions.dll</HintPath>
-    </Reference>
-    <Reference Include="Equilobe.Microservice.Core.Logging">
-      <HintPath>..\..\..\equilobe-shared-dlls\Equilobe.Microservice.Core.Logging.dll</HintPath>
-    </Reference>
-    <Reference Include="Equilobe.Microservice.Core.Swagger">
-      <HintPath>..\..\..\equilobe-shared-dlls\Equilobe.Microservice.Core.Swagger.dll</HintPath>
-    </Reference>
+    <None Remove="Equilobe.Microservice.Core" />
+    <None Remove="Equilobe.Microservice.Core.AspNet.Mvc" />
+    <None Remove="Equilobe.Microservice.Core.ExceptionHandling" />
+    <None Remove="Equilobe.Microservice.Core.Exceptions" />
+    <None Remove="Equilobe.Microservice.Core.EfCore" />
+    <None Remove="Equilobe.Microservice.Core.Swagger" />
+    <None Remove="Equilobe.Microservice.Core.Logging" />
   </ItemGroup>
-
   <ItemGroup>
     <None Update="version.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

@@ -13,8 +13,7 @@ using FluentValidation;
 
 var (builder, services, configuration) = WebApplication.CreateBuilder(args);
 
-builder.Logging.ClearProviders();
-builder.Logging.AddConsole();
+builder.UseConfiguredSerilog();
 
 var assembly = Assembly.GetExecutingAssembly();
 
